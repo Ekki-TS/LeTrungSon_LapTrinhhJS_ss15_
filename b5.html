@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .delete {
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2 style="text-align:center;">To-Do List K24_PTIT</h2>
+
+    <div class="container">
+
+        <input type="text" id="taskInput" placeholder="Nhập nhiệm vụ...">
+        <button onclick="addTask()">Thêm</button>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <script src="./b5.js"></script>
+
+</body>
+
+</html>
